@@ -45,6 +45,12 @@ class Karaoke
     return @room.count
   end
 
+  # def room_full(name)
+  #   if add_guest > capacity
+  #     return "Room full"
+  #   end
+  # end
+
 # not quite sure how this passes the test without any function
 # but fails with it uncommented out?
   def afford_entry(name)
