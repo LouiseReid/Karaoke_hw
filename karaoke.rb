@@ -53,10 +53,10 @@ class Karaoke
 
 # not quite sure how this passes the test without any function
 # but fails with it uncommented out?
-  def afford_entry(name)
-    # if guest.money >= @karaoke.afford_entry
-    #   return true
-    # end
+  def afford_entry(guest)
+    if guest.money >= @entry
+      return true
+    end
   end
 
   def crowd_responce()

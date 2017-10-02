@@ -11,7 +11,7 @@ class UserInterface
   def bouncer()
     puts "Names please!  If your names not down, you're not getting in"
     guest1 = gets.chomp
-    puts "Let me see.... Yep, #{guest.name} your names here, in you go"
+    puts "Let me see.... Yep, #{guest1.name} your names here, in you go"
     puts
     puts "And yourself?"
     guest2 = gets.chomp
