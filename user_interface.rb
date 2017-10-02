@@ -3,6 +3,8 @@ require_relative './ascii'
 class UserInterface
 
   def initialize
+  end
+
 
   def show_welcome
     puts Ascii.welcome()

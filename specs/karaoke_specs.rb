@@ -59,11 +59,11 @@ class KaraokeTest < MiniTest::Test
     assert_equal(0, actual)
   end
 
-  # def test_room_full()
-  #   @room = ["Louise", "Lynsey", "David", "Alanna", "Steffen"]
-  #   actual = @karaoke.room_full(name)
-  #   assert_equal("Room full", actual)
-  # end
+  def test_room_full()
+    @room = ["Louise", "Lynsey", "David", "Alanna", "Steffen"]
+    actual = @karaoke.room_full()
+    assert("Room full", actual)
+  end
 
 
   def test_can_customer_afford_entry()

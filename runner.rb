@@ -9,7 +9,6 @@ class Runner
 
 
   def setup()
-
     ui = UserInterface.new()
     guest1 = Guest.new("Louise", 20)
     guest2 = Guest.new("Alanna", 15)
@@ -23,9 +22,15 @@ class Runner
     drinks_consumed = 0
   end
 
-  def run()
-    ui.show_welcome
-    ui.bouncer
+    puts Ascii.welcome()
+    puts "Names please!  If your names not down, you're not getting in"
+    guest1 = gets.chomp
+    puts "Let me see.... Yep, #{guest1} your names here, in you go"
+    puts
+    puts "And yourself?"
+    guest2 = gets.chomp
+    puts "#{guest2}? Yes there you are.  Enjoy your night!"
+
     karaoke.add_guest(guest1, guest2)
     ui.song_choice
     karaoke.random_song
@@ -41,10 +46,8 @@ class Runner
     until bar.drinks_consumed > bar.limit do
       ui.like_a_drink
     end
-  end
+
 
 
 
 end
-
-self.run()

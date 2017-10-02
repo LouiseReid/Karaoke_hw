@@ -16,6 +16,10 @@ class Karaoke
     @entry
   end
 
+  def room_occupancy
+    return @room.count
+  end
+
   def add_songs(song)
     @songs << song
     return @songs.length()
@@ -45,14 +49,12 @@ class Karaoke
     return @room.count
   end
 
-  # def room_full(name)
-  #   if add_guest > capacity
-  #     return "Room full"
-  #   end
-  # end
+  def room_full()
+    if room_occupancy > @capacity
+    end
+    return "Room full"
+  end
 
-# not quite sure how this passes the test without any function
-# but fails with it uncommented out?
   def afford_entry(guest)
     if guest.money >= @entry
       return true
