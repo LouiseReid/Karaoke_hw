@@ -67,7 +67,7 @@ class Karaoke
   end
 
   def random_song()
-    return @song.sample
+    return @songs.sample
   end
 
 

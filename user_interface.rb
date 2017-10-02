@@ -21,9 +21,9 @@ class UserInterface
   end
 
   def song_choice()
-    puts "#{guest1} what song would you like to sing?"
+    puts "What song would you like to sing?"
     song1 = gets.chomp
-    puts "We don't have #{song.name} by #{song.artist}.  How about...?"
+    puts "We don't have #{song1} song.  How about...?"
   end
 
   def move_to_bar
